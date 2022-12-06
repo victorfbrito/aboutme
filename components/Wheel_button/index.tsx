@@ -35,7 +35,7 @@ export default function Switch_button({ text }: Case) {
     <sc.MainWrapper radius={radius}
       onMouseEnter={() => cursorChangeHandler("hovered", "Work together")}
       onMouseLeave={() => cursorChangeHandler("")}
-      href={'/pdf_sample.pdf'}
+      href={'/resume.pdf'}
       target="_blank"
       rel="noreferrer"
     >

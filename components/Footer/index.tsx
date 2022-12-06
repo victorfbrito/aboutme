@@ -29,7 +29,7 @@ export default function Footer({ ref }: any) {
     >
       <sc.TextWrapper>
         <p>
-          If you have a project you&apos;d like to talk about, you can find me on <B href="https://www.linkedin.com/in/victor-brito-732ba6165/">Linkedin</B>, <B href="https://github.com/victorfbrito">Github</B>, <B href="mailto:victor_f_brito@outlook.com">email</B> me or check my <B href="/pdf_sample.pdf">curriculum</B>.
+          If you have a project you&apos;d like to talk about, you can find me on <B href="http://www.linkedin.com/in/vbrito-dev">Linkedin</B>, <B href="https://github.com/victorfbrito">Github</B>, <B href="mailto:victor_f_brito@outlook.com">email</B> me or check my <B href="/resume.pdf">curriculum</B>.
         </p>
       </sc.TextWrapper>
       <sc.ImageWrapper>

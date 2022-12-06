@@ -5,7 +5,7 @@
         "list_name": "Browser Extension",
         "about": "This project is a browser extension experiment built with Vue. It allows it's users to customize their Whatsapp Web chat background with different images and animations",
         "tech": [
-            "React", "Vue", "Styled Components"
+            "Chrome Extension API", "Vue", "Styled Components"
         ],
         "animation_src": "wp_extension_video.mp4",
         "url": "https://github.com/victorfbrito/whatsapp-web-customize"
@@ -30,6 +30,6 @@
             "Next", "Styled Components", "React Parallax", "Figma"
         ],
         "animation_src": "sample_video.mp4",
-        "url": "https://wikipedia-redesign-umber.vercel.app/article/Harry_Potter"
+        "url": "https://vbrito.dev"
     }
 ]

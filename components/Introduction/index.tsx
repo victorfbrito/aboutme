@@ -20,7 +20,7 @@ export default function Introduction() {
         </span>
       </sc.Title>
       <sc.Subtitle>
-        <B href="/pdf_sample.pdf">Open to work</B>
+        <B href="/resume.pdf">Open to work</B>
       </sc.Subtitle>
     </sc.MainWrapper>
   )
