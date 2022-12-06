@@ -25,15 +25,15 @@ export default function Cursor() {
   return (
     <>
       <sc.Ring
-        style={{ left: `${x}px`, top: `${y}px` }}
+        style={{ left: `${x ? x : 0}px`, top: `${y ? y : 0}px` }}
         cursorType={cursorType}
       ></sc.Ring>
       <sc.Dot
-        style={{ left: `${x}px`, top: `${y}px` }}
+        style={{ left: `${x ? x : 0}px`, top: `${y ? y : 0}px` }}
         cursorType={cursorType}
       ></sc.Dot>
       <sc.Indicator width={20} height={20}
-        style={{ left: `${x - 10}px`, top: `${y - 10}px`}}
+        style={{ left: `${(x ? x : 0) - 10}px`, top: `${(y ? y : 0) - 10}px`}}
         rel_pos={labelPos(x || 0, y || 0)}
         cursorType={cursorType}
       />
