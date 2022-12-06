@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_8" data-name="Retângulo 8" width="36" height="36" transform="translate(698 390)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="arrow-filled" transform="translate(-698 -390)" clip-path="url(#clip-path)">
+    <path id="arrow-filled-2" data-name="arrow-filled" d="M6,10.243V32H0V0H32V6H10.243L34.122,29.879l-4.243,4.243Z" transform="translate(698 392)" fill="#64ffda"/>
+  </g>
+</svg>

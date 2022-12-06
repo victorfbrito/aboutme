@@ -3,12 +3,68 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, Formula;
+  cursor: none !important;
+}
+
+/* * {
+  transition: background-color 0.2s, color 0.2s linear 0.2s;
+  -webkit-transition: background-color 0.2s, color 0.2s linear 0.2s;
+  -ms-transition: background-color 0.2s, color 0.2s linear 0.2s;
+} */
+
+
+:root {
+  --primary: #ccd6f6;
+  --secondary: #8892b0;
+  --background: #0a192f;
+  --action: #64ffda;
+  --active: whitesmoke;
+
+  --title-font-family: Formula;
+  --title-font-size: 8vw;
+  --subtitle-font-family: Formula;
+  --subtitle-font-size: 1vw;
+
+  --p1-font-family: Neue Montreal;
+  --p1-font-size: 2.3vw;
+  --p1-font-weight: 450;
+
+  --p2-font-family: Neue Montreal;
+  --p2-font-size: 1.5vw;
+  --p2-font-weight: 300;
+
+  --body-font-family: Neue Montreal;
+  --body-font-size: 1.6rem;
+  --body-font-weight: 300;
+
+  --action-font-family: Neue Montreal;
+  --action-font-size: 25px;
+  --action-font-weight: 100;
+
+  --scroll-font-family: Neue Montreal;
+  --scroll-font-size: 2rem;
+  --scroll-font-weight: 300;
+
+  --bg-detail-opacity: 0.1;
+
+  --list-item-font-size: 5rem;
+  
+}
+
+@media (max-width: 850px) { 
+  :root {
+    --title-font-size: 16vw;
+  }
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  cursor: none;
 }
 
 * {
@@ -20,7 +76,24 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: var(--primary);
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+  :root {
+    --p1-font-size: 2rem;
+    --p2-font-size: 1.5rem;
+    
+    --list-item-font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  :root {
+    --p1-font-size: 1.5rem;
+    --p2-font-size: 1rem;
+    
+    --list-item-font-size: 2rem;
   }
 }
