@@ -19,7 +19,7 @@ export const MainWrapper = styled.a<ActionProps>`
         width: 0;
         height: 100%;
         overflow: hidden;
-        background-color: var(--action);
+        background: var(--action);
         color: transparent;
         transition: width 0.4s;
         mix-blend-mode: difference;

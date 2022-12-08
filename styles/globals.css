@@ -80,6 +80,15 @@ a:hover {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: var(--primary);
+  }
+}
+
 @media screen and (min-width: 851px) and (max-width: 1024px) {
   :root {
     --p1-font-size: 2rem;
