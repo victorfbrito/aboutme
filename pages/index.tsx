@@ -1,5 +1,3 @@
-import type { NextPage } from 'next'
-import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import React, { useState, useEffect, useContext, useRef } from 'react'
@@ -32,6 +30,9 @@ export default function Home() {
 
   return (
     <MouseContextProvider>
+    <Head>
+      <link rel="shortcut icon" href="/favicon.ico" />
+    </Head>
       <Parallax ref={parallax} pages={3.5}>
         {/* <Wheel_button text="open to work"/> */}
         {/* <ParallaxLayer  
