@@ -16,7 +16,7 @@
         "list_name": "Wiki Redesign",
         "about": "Wikipedia is an online encyclopedia maintained by a model of open collaboration. They provide free access to their data through the MediaWiki API. I used this project to communicate with and exhibit data from this API. I'm not this designs original creator, just used it as a model for this experience.",
         "tech": [
-            "Vue", "Styled Components", "MediaWiki API"
+            "React", "Styled Components", "MediaWiki API"
         ],
         "animation_src": "wiki_redesign_video.mp4",
         "url": "https://wikipedia-redesign-umber.vercel.app/article/Harry_Potter"

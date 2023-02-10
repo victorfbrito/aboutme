@@ -1,17 +1,12 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import React, { useState, useEffect, useContext, useRef } from 'react'
-import { MouseContext } from "../context/mouse-context";
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
 
 import MouseContextProvider from "../context/mouse-context";
 
 import Noise_Wrapper from '../components/Noise_wrapper'
-import Wheel_button from '../components/Wheel_button'
 import Footer from '../components/Footer'
 import Signature from '../components/Signature'
-import Gyroscope from '../components/Gyroscope'
-import Topography from '../components/Topography'
 import Introduction from '../components/Introduction'
 import Cursor from '../components/Cursor'
 import About from '../components/About'
@@ -22,7 +17,6 @@ import Extra from '../components/Extra'
 import WorkCard from '../components/Work_Card'
 import WorkDetails from '../components/Work_Details'
 import WorkList from '../components/Work_List'
-import Header from '../components/Header'
 import Background_Wrapper from '../components/Background_wrapper'
 
 export default function Home() {
@@ -34,18 +28,9 @@ export default function Home() {
       <link rel="shortcut icon" href="/favicon.ico" />
     </Head>
       <Parallax ref={parallax} pages={3.5}>
-        {/* <Wheel_button text="open to work"/> */}
-        {/* <ParallaxLayer  
-          offset={0} 
-          speed={0.2}
-          // speed={0}
-          >
-          <Header/>
-        </ParallaxLayer> */}
         <ParallaxLayer  
           offset={0} 
           speed={0.5}
-          // speed={0}
           >
           <Introduction/>
         </ParallaxLayer>
@@ -60,7 +45,6 @@ export default function Home() {
         <ParallaxLayer  
           offset={1.2} 
           speed={0.2}
-          // speed={0}
           >
           <About/>
         </ParallaxLayer>
@@ -73,7 +57,6 @@ export default function Home() {
         <ParallaxLayer  
           offset={1.4}
           speed={0.4}
-          // speed={0}
           >
           <Skills/>
         </ParallaxLayer>
@@ -96,7 +79,6 @@ export default function Home() {
         <ParallaxLayer  
           offset={2.2}
           speed={0.2}
-          // speed={0}
           >
           <WorkDetails/>
           <WorkList/>
@@ -121,7 +103,6 @@ export default function Home() {
         <ParallaxLayer  
           offset={3}
           speed={0.2}
-          // speed={0}
           style={{ backgroundColor: 'black' }}
           >
           <Footer/>
