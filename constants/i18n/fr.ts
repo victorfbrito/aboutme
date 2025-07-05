@@ -26,7 +26,9 @@ const fr = {
     intro: "Si vous avez un projet dont vous souhaitez parler, vous pouvez me trouver sur",
     resume_call: "ou consulter mon",
     resume: "CV",
-  }
+  },
+  and: "et",
+  github_info: "J'ai {{count}} commits hébergés sur GitHub.",
 };
 
 export default fr;

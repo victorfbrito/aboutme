@@ -26,7 +26,9 @@ const es = {
     intro: 'Si tienes un proyecto del que te gustaría hablar, puedes encontrarme en',
     resume_call: 'o ver mi',
     resume: 'currículum',
-  }
+  },
+  and: "y",
+  github_info: "Tengo {{count}} commits alojados en GitHub.",
 };
 
 export default es;

@@ -27,6 +27,8 @@ const pt = {
     resume_call: "ou conferir meu",
     resume: "currículo",
   },
+  and: "e",
+  github_info: "Tenho {{count}} commits hospedados no GitHub.",
 };
 
 export default pt;

@@ -22,11 +22,13 @@ const en = {
       about: "This is my virtual Business Card. I plan to improve it regularly for cleaner code and visuals. Inspired by Jonas Reymondin and Brittany Chang."
     }
   },
-    contact: {
-        intro: "If you have a project you'd like to talk about, you can find me on",
-        resume_call: "or check my",
-        resume: "resume",
-    }
+  contact: {
+      intro: "If you have a project you'd like to talk about, you can find me on",
+      resume_call: "or check my",
+      resume: "resume",
+  },
+  and: "and",
+  github_info: "I have {{count}} commits hosted on GitHub.",
 };
 
 export default en;

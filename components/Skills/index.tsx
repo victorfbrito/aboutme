@@ -38,15 +38,7 @@ export default function Skills({ commits }: { commits: number }) {
     requestAnimationFrame(step);
   }, [commits, duration]);
 
-  const skills = [
-    "React",
-    "jQuery",
-    "Vue",
-    "Node.js",
-    "Express",
-    "Next.js",
-    "Three.js",
-  ];
+  const skills = ["React", "Vue", "Node.js", "Express", "Next.js", "Three.js"];
 
   return (
     <sc.MainWrapper>
@@ -56,10 +48,10 @@ export default function Skills({ commits }: { commits: number }) {
         skills.indexOf(e) < skills.length - 2
           ? e + ", "
           : skills.indexOf(e) < skills.length - 1
-          ? e + " and "
+          ? e + ` ${t("and")} `
           : e
       )}
-      ; and I have {count} commits hosted on GitHub.
+      ; {t("github_info", { count: count })}
       <br />
       <br />
       {t("about.learning")}
