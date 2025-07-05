@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState, useEffect, useContext, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 
 import MouseContextProvider from "../context/mouse-context";
@@ -25,6 +25,14 @@ import { useTranslation } from "react-i18next";
 export default function Home() {
   const parallax = useRef<IParallax>(null!);
   const { t } = useTranslation();
+  const [commits, setCommits] = useState<number>(0);
+
+  useEffect(() => {
+    fetch("/api/github/commits")
+      .then((res) => res.json())
+      .then((data) => setCommits(data.commits))
+      .catch(() => setCommits(0));
+  }, []);
 
   const layers = [
     { offset: 0, speed: 0.5, element: <Introduction /> },
@@ -39,7 +47,7 @@ export default function Home() {
     },
     { offset: 1.2, speed: 0.2, element: <About /> },
     { offset: 1.65, speed: 0, element: <Extra /> },
-    { offset: 1.4, speed: 0.4, element: <Skills /> },
+    { offset: 1.4, speed: 0.4, element: <Skills commits={commits} /> },
     {
       offset: 1.85,
       speed: 0,
@@ -85,6 +93,7 @@ export default function Home() {
   return (
     <MouseContextProvider>
       <Head>
+        <title>Victor Brito — Front-End Developer Portfolio</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <Parallax ref={parallax} pages={3.5}>
