@@ -51,7 +51,7 @@ export default function Skills({ commits }: { commits: number }) {
           ? e + ` ${t("and")} `
           : e
       )}
-      ; {t("github_info", { count: count })}
+      ; {count > 0 && t("github_info", { count: count })}
       <br />
       <br />
       {t("about.learning")}
