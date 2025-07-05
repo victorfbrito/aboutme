@@ -20,9 +20,11 @@ import {
   Noise_Wrapper,
   Background_Wrapper,
 } from "../components";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const parallax = useRef<IParallax>(null!);
+  const { t } = useTranslation();
 
   const layers = [
     { offset: 0, speed: 0.5, element: <Introduction /> },
@@ -45,7 +47,7 @@ export default function Home() {
         <ScrollButton
           dist="35%"
           scrollTo={() => parallax.current.scrollTo(2)}
-          label="Work"
+          label={t("guides.work")}
         />
       ),
     },
@@ -67,7 +69,7 @@ export default function Home() {
         <ScrollButton
           dist="65%"
           scrollTo={() => parallax.current.scrollTo(2.5)}
-          label="Contact"
+          label={t("guides.contact")}
         />
       ),
     },

@@ -1,23 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-import * as sc from './styled'
+import * as sc from "./styled";
 
 export default function About() {
+  const { t } = useTranslation();
 
   return (
     <sc.MainWrapper>
-      <p>
-        My goal is to create pretty and reliable websites, where design and efficiency can be combined to provide the best user experience.
-      </p>
-      <p>
-        I&apos;m passionate about visual effects and anything motion related.
-      </p>
-      <p>
-      My favorite frameworks are:
-      React, jQuery, Vue, Node.js, Express, Next.js and Three.js;
-
-      But I&apos;m open for new things.
-      </p>
+      <p>{t("about.goal")}</p>
+      <p>{t("about.passion")}</p>
+      <p>{t("about.stack")}</p>
     </sc.MainWrapper>
-  )
+  );
 }
