@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Arrow from './redirect-arrow.svg'
+import Arrow from '../assets/redirect-arrow.svg'
 
 export const Ring = styled.div<any>`
     @media screen and (max-width: 850px) {

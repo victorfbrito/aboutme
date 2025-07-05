@@ -16,14 +16,13 @@ This is my virtual Business Card. I plan to improve it regularly for a cleaner c
 ### Screenshots
 
 - Header
-![](p1.png)
+  ![](/public/p1.png)
 - Project list
-![](p2.png)
+  ![](/public/p2.png)
 - Footer
-![](p3.png)
+  ![](/public/p3.png)
 - Header (Mobile preview)
-![](p4.png)
-
+  ![](/public/p4.png)
 
 ### Links
 
