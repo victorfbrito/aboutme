@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 
 export const Wrapper = styled.div`
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
 position: absolute;
 top: 5%;
 left: 5%;

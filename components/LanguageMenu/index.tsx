@@ -6,7 +6,7 @@ import { MouseContext } from "../../context/mouse-context";
 
 export default function LanguageMenu() {
   const { i18n } = useTranslation();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
 
