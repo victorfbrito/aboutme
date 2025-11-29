@@ -17,7 +17,9 @@ export default function WorkList() {
           key={i}
           href={e.url}
           target="_blank"
-          onMouseEnter={() => cursorChangeHandler("redirect", "", e)}
+          onMouseEnter={() =>
+            cursorChangeHandler("redirect", "", { ...e, index: i })
+          }
           onMouseLeave={() => cursorChangeHandler("")}
         >
           {e.list_name}
