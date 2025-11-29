@@ -12,6 +12,9 @@ const es = {
     learning: 'Pero siempre estoy aprendiendo cosas nuevas.'
   },
   projects: {
+    stackt: {
+      about: 'Stackt es un juego inspirado en Tetris construido con React Three Fiber, Blender y Spring, con una mezcla de bloqueo clásico con vibraciones modernas low-poly cómodas.'
+    },
     browserExtension: {
       about: 'Este proyecto es una extensión de navegador experimental construida con Vue. Permite a los usuarios personalizar el fondo de su chat de Whatsapp Web con diferentes imágenes y animaciones.'
     },

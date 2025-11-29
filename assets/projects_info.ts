@@ -1,15 +1,13 @@
 export const projects = [
   {
-    index: 0,
-    git_name: 'Browser Extension',
-    list_name: 'Browser Extension',
-    aboutKey: 'projects.browserExtension.about',
-    tech: ['Chrome Extension API', 'React', 'Styled Components'],
-    animation_src: 'wp_extension_video.mp4',
-    url: 'https://github.com/victorfbrito/whatsapp-web-customize',
+    git_name: 'Stackt',
+    list_name: 'Stackt game',
+    aboutKey: 'projects.stackt.about',
+    tech: ['React', 'Three.js', 'Spring', 'Blender', 'TypeScript'],
+    animation_src: 'stackt.mp4',
+    url: 'https://stackt-game.vercel.app',
   },
   {
-    index: 1,
     git_name: 'Wiki Redesign',
     list_name: 'Wiki Redesign',
     aboutKey: 'projects.wikiRedesign.about',
@@ -18,7 +16,14 @@ export const projects = [
     url: 'https://wikipedia-redesign-umber.vercel.app/article/Harry_Potter',
   },
   {
-    index: 2,
+    git_name: 'Component Library',
+    list_name: 'NeoPTO UI',
+    aboutKey: 'projects.neopto_ui.about',
+    tech: ['React', 'Tailwind CSS', 'TypeScript'],
+    animation_src: 'neopto_ui.mp4',
+    url: 'https://neoptocom.github.io/neopto-ui/docs',
+  },
+  {
     git_name: 'Portfolio V1',
     list_name: 'Portfolio V1',
     aboutKey: 'projects.portfolioV1.about',

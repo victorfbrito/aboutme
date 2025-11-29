@@ -35,7 +35,7 @@ export const BgFrame = styled.span<FrameContainer>`
 
 export const ActiveFrame = styled.div<FrameContainer>`
     position: absolute;
-    background: radial-gradient(ellipse at top, var(--primary), var(--secondary));
+    //background: radial-gradient(ellipse at top, var(--primary), var(--secondary));
     // background: radial-gradient(ellipse at top, black,black);
     width: 400px;
     height: 300px;
@@ -45,18 +45,17 @@ export const ActiveFrame = styled.div<FrameContainer>`
     opacity: ${p => p.proj ? 1 : 0};
     transition: opacity 0.2s, clip-path 0.2s;
     clip-path: ${p => p.proj ? 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)': 'polygon(0% 4%, 96% 0%, 100% 96%, 4% 100%)'};
+    // overflow: hidden;
     & > * {
         &:first-child {
             box-shadow:  -5px 5px 15px black;
         }
     }
     & > video {
-        width: 360px;
-        height: 226px;
-        @media (min-width: 851px) and (max-width: 1024px) {
-            width: 300px;
-            height: 225px;
-        };
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+        // display: block;
     }
     @media (min-width: 851px) and (max-width: 1024px) {
         width: 300px;

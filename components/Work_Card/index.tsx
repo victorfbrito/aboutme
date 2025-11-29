@@ -16,7 +16,7 @@ export default function WorkAnimation() {
       <sc.BgFrame proj={proj} />
       <sc.ActiveFrame proj={proj}>
         {proj && (
-          <video autoPlay loop>
+          <video autoPlay loop muted playsInline preload="auto">
             <source src={`/${proj?.animation_src}`} />
           </video>
         )}

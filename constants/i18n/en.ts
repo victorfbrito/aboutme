@@ -12,6 +12,12 @@ const en = {
     learning:"But I'm always learning new things."
   },
   projects: {
+    stackt: {
+      about: "Stackt is a Tetris-inspired game built with React Three Fiber, Blender and Spring, with a mix of classic block-stacking with modern low-poly cozy vibes."
+    },
+    neopto_ui: {
+      about: "NeoPTO UI is a component library built with React and Tailwind CSS. It allows its users to create beautiful and responsive websites with ease. It was built in partnership with NeoPTO and the The Federal University of Campina Grande. I was responsible for turning the existing code into a reusable, modular and reliable NPM library."
+    },
     browserExtension: {
       about: "This project is a browser extension experiment built with Vue. It allows its users to customize their Whatsapp Web chat background with different images and animations."
     },

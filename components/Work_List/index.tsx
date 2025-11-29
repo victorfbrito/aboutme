@@ -12,9 +12,9 @@ export default function WorkList() {
 
   return (
     <sc.MainWrapper>
-      {projects.map((e) => (
+      {projects.map((e, i) => (
         <sc.Item
-          key={projects.indexOf(e)}
+          key={i}
           href={e.url}
           target="_blank"
           onMouseEnter={() => cursorChangeHandler("redirect", "", e)}
