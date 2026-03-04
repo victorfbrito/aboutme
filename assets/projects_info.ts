@@ -1,6 +1,14 @@
 export const projects = [
   {
-    git_name: 'Stackt',
+    git_name: 'Audio Engine',
+    list_name: 'Jump Deck',
+    aboutKey: 'projects.jumpdeck.about',
+    tech: ['React', 'Python', 'API Gateway + Lambda', 'DynamoDB', 'Librosa + Numpy'],
+    animation_src: 'jumpdeck.mp4',
+    url: 'https://jumpdeck.vercel.app',
+  },
+  {
+    git_name: 'React-based Game',
     list_name: 'Stackt game',
     aboutKey: 'projects.stackt.about',
     tech: ['React', 'Three.js', 'Spring', 'Blender', 'TypeScript'],

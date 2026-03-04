@@ -8,7 +8,7 @@ const es = {
     goal: 'Mi objetivo es crear sitios web bonitos y confiables, donde el diseño y la eficiencia se combinen para brindar la mejor experiencia al usuario.',
     passion: 'Me apasionan los efectos visuales y todo lo relacionado con el motion design.',
     based: 'Vivo en São Paulo, Brasil.',
-    stack: 'Mis frameworks favoritos son:',
+    stack: 'Mis tecnologías favoritas son:',
     learning: 'Pero siempre estoy aprendiendo cosas nuevas.'
   },
   projects: {

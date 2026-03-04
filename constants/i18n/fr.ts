@@ -8,8 +8,8 @@ const fr = {
     goal: "Mon objectif est de créer des sites web beaux et fiables, où le design et l'efficacité se combinent pour offrir la meilleure expérience utilisateur.",
     passion: "Je suis passionné par les effets visuels et tout ce qui touche au motion design.",
     based: "Je suis basé à São Paulo, Brésil.",
-    stack: "Mes frameworks préférés sont :",
-    learning: "Mais j'apprends toujours de nouvelles choses."
+    stack: "Mes technologies préférés sont :",
+    learning: "Mais je suis toujours en train d'apprendre de nouvelles choses."
   },
   projects: {
     stackt: {

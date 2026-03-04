@@ -10,7 +10,7 @@ export default function About() {
         Victor Brito,
       </p>
       <p>
-        Front-end Developer
+        Software Engineer
       </p>
     </sc.MainWrapper>
   )

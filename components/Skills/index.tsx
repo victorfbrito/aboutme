@@ -38,7 +38,7 @@ export default function Skills({ commits }: { commits: number }) {
     requestAnimationFrame(step);
   }, [commits, duration]);
 
-  const skills = ["React", "Vue", "Node.js", "Express", "Next.js", "Three.js"];
+  const skills = ["React", "Node.js", "Python", "AWS", "TypeScript"];
 
   return (
     <sc.MainWrapper>

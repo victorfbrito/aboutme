@@ -8,7 +8,7 @@ const pt = {
     goal: "Meu objetivo é criar sites bonitos e confiáveis, onde design e eficiência se combinem para oferecer a melhor experiência ao usuário.",
     passion: "Sou apaixonado por efeitos visuais e tudo relacionado a animações.",
     based: "Moro em São Paulo, Brasil.",
-    stack: "Meus frameworks favoritos são: ",
+    stack: "Minhas tecnologias favoritas são: ",
     learning: "Mas estou sempre aprendendo coisas novas."
   },
   projects: {

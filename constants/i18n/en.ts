@@ -8,10 +8,13 @@ const en = {
     goal: 'My goal is to create pretty and reliable websites, where design and efficiency can be combined to provide the best user experience.',
     passion: "I'm passionate about visual effects and anything motion related.",
     based: "I'm based in São Paulo, Brazil.",
-    stack: "My favorite frameworks are:",
+    stack: "My favorite technologies are:",
     learning:"But I'm always learning new things."
   },
   projects: {
+    jumpdeck: {
+      about: "JumpDeck is an audio analysis platform that transforms user-uploaded songs into beat-aware, jumpable playback experiences. Built with Python and Librosa for audio processing, Numpy for KNN algorithm for similarity detection and powered by AWS (Lambda, API Gateway and S3), it analyzes tempo, beats and timing to generate structured data for dynamic music interaction in the browser."
+    },
     stackt: {
       about: "Stackt is a Tetris-inspired game built with React Three Fiber, Blender and Spring, with a mix of classic block-stacking with modern low-poly cozy vibes."
     },

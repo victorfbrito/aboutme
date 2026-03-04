@@ -93,7 +93,7 @@ export default function Home() {
   return (
     <MouseContextProvider>
       <Head>
-        <title>Victor Brito — Front-End Developer Portfolio</title>
+        <title>Victor Brito — Software Engineer Portfolio</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <Parallax ref={parallax} pages={3.5}>

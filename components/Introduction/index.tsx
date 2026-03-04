@@ -10,8 +10,8 @@ export default function Introduction() {
     <sc.MainWrapper>
       <LanguageMenu />
       <sc.Title>
-        <span>Front-End</span>
-        <span>Developer</span>
+        <span>Software</span>
+        <span>Engineer</span>
         <span>Portfolio</span>
       </sc.Title>
       <sc.Subtitle>
