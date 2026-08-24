@@ -5,7 +5,7 @@ const en = {
     contact: 'Contact',
   },
   about: {
-    goal: 'My goal is to create pretty and reliable websites, where design and efficiency can be combined to provide the best user experience.',
+    goal: 'My goal is to create meaningful and reliable websites, where design and efficiency can be combined to provide the best experience.',
     passion: "I'm passionate about visual effects and anything motion related.",
     based: "I'm based in São Paulo, Brazil.",
     stack: "My favorite technologies are:",
