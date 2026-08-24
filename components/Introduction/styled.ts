@@ -1,13 +1,4 @@
-import styled, { keyframes } from 'styled-components'
-
-const IntroAnimation = keyframes`
-    0% {
-        padding-top: 100px;
-    }
-    100% {
-        padding-top: 0;
-    }
-`
+import styled from 'styled-components'
 
 export const MainWrapper = styled.div`
     display: flex;
@@ -31,7 +22,6 @@ export const Title = styled.h1`
     flex-direction: column;
     align-self: flex-end;
     & > span {
-        animation: 1.4s ease 0s 1 ${IntroAnimation};
         height: calc(var(--title-font-size) - 18px);
         margin-top: -18px;
         overflow: hidden;
@@ -51,6 +41,25 @@ export const Title = styled.h1`
             height: calc(var(--title-font-size) + 8px);
         }
     }
+`
+
+export const Char = styled.span`
+    position: relative;
+    display: inline-block;
+`
+
+export const Ghost = styled.span`
+    visibility: hidden;
+    pointer-events: none;
+`
+
+export const Face = styled.span<{ $locked: boolean; $active: boolean }>`
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: ${p => (p.$locked ? 'var(--primary)' : 'var(--secondary)')};
+    opacity: ${p => (p.$active || p.$locked ? 1 : 0)};
+    transition: color 0.25s ease, opacity 0.15s ease;
 `
 
 export const Subtitle = styled.h2`
