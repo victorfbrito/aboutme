@@ -9,6 +9,7 @@ export const MainWrapper = styled.div`
     left: 35%;
     padding: 0 2%;
     width: 30%;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     @media (max-width: 850px) {
@@ -16,6 +17,7 @@ export const MainWrapper = styled.div`
     }
     @media (min-width: 851px) and (max-width: 1024px) {
         left: 15%;
+        min-height: 225px;
     };
 `
 
@@ -46,16 +48,17 @@ export const ActiveFrame = styled.div<FrameContainer>`
     transition: opacity 0.2s, clip-path 0.2s;
     clip-path: ${p => p.proj ? 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)': 'polygon(0% 4%, 96% 0%, 100% 96%, 4% 100%)'};
     // overflow: hidden;
-    & > * {
-        &:first-child {
-            box-shadow:  -5px 5px 15px black;
-        }
-    }
     & > video {
+        position: absolute;
         width: 100%;
         height: 100%;
-        // object-fit: cover;
-        // display: block;
+        object-fit: cover;
+        box-shadow: -5px 5px 15px black;
+        opacity: 0;
+        pointer-events: none;
+        &[data-active="true"] {
+            opacity: 1;
+        }
     }
     @media (min-width: 851px) and (max-width: 1024px) {
         width: 300px;

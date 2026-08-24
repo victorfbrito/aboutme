@@ -5,6 +5,7 @@ export const projects = [
     aboutKey: 'projects.jumpdeck.about',
     tech: ['React', 'Python', 'API Gateway + Lambda', 'DynamoDB', 'Librosa + Numpy'],
     animation_src: 'jumpdeck.mp4',
+    animation_poster: 'jumpdeck.jpg',
     url: 'https://jumpdeck.vercel.app',
   },
   {
@@ -13,6 +14,7 @@ export const projects = [
     aboutKey: 'projects.stackt.about',
     tech: ['React', 'Three.js', 'Spring', 'Blender', 'TypeScript'],
     animation_src: 'stackt.mp4',
+    animation_poster: 'stackt.jpg',
     url: 'https://stackt-game.vercel.app',
   },
   {
@@ -21,6 +23,7 @@ export const projects = [
     aboutKey: 'projects.wikiRedesign.about',
     tech: ['Vue', 'Styled Components', 'MediaWiki API'],
     animation_src: 'wiki_redesign_video.mp4',
+    animation_poster: 'wiki_redesign_video.jpg',
     url: 'https://wikipedia-redesign-umber.vercel.app/article/Harry_Potter',
   },
   {
@@ -29,6 +32,7 @@ export const projects = [
     aboutKey: 'projects.neopto_ui.about',
     tech: ['React', 'Tailwind CSS', 'TypeScript'],
     animation_src: 'neopto_ui.mp4',
+    animation_poster: 'neopto_ui.jpg',
     url: 'https://neoptocom.github.io/neopto-ui/docs',
   },
   {
@@ -37,6 +41,7 @@ export const projects = [
     aboutKey: 'projects.portfolioV1.about',
     tech: ['Next', 'Styled Components', 'React Parallax', 'Figma'],
     animation_src: 'sample_video.mp4',
+    animation_poster: 'sample_video.jpg',
     url: 'https://vbrito.dev',
   },
 ];

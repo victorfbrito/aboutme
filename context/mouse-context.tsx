@@ -7,6 +7,7 @@ export interface Project {
   aboutKey: string;
   tech: string[];
   animation_src: string;
+  animation_poster: string;
 }
 
 interface Mouse {

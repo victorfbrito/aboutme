@@ -1,10 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { projects } from '../assets/projects_info'
-
-const videoSources = Array.from(
-  new Set(projects.map((project) => project.animation_src).filter(Boolean))
-)
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -36,11 +31,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          {videoSources.map((src) => (
-            <link key={src} rel="preload" as="video" href={`/${src}`} type="video/mp4" />
-          ))}
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
