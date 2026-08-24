@@ -1,12 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import * as sc from "./styled";
 import { useTranslation } from "react-i18next";
+import ScrambleText from "../ScrambleText";
+
+const SKILLS = ["Node.js", "React", "Python", "TypeScript", "AWS"];
 
 export default function Skills({ commits }: { commits: number }) {
   const [count, setCount] = useState(0);
+  const [play, setPlay] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
   const duration = 5000;
+
+  useEffect(() => {
+    const node = wrapperRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setPlay(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     let startTimestamp: number | null = null;
@@ -38,19 +61,16 @@ export default function Skills({ commits }: { commits: number }) {
     requestAnimationFrame(step);
   }, [commits, duration]);
 
-  const skills = ["React", "Node.js", "Python", "AWS", "TypeScript"];
-
   return (
-    <sc.MainWrapper>
+    <sc.MainWrapper ref={wrapperRef}>
       {t("about.stack")}
       <br />
-      {skills.map((e) =>
-        skills.indexOf(e) < skills.length - 2
-          ? e + ", "
-          : skills.indexOf(e) < skills.length - 1
-          ? e + ` ${t("and")} `
-          : e
-      )}
+      {SKILLS.map((skill, i) => (
+        <React.Fragment key={skill}>
+          <ScrambleText text={skill} play={play} />
+          {i < SKILLS.length - 2 ? ", " : i < SKILLS.length - 1 ? ` ${t("and")} ` : ""}
+        </React.Fragment>
+      ))}
       ; {count > 0 && t("github_info", { count: count })}
       <br />
       <br />

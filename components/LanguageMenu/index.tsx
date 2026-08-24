@@ -8,7 +8,7 @@ export default function LanguageMenu() {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+  const { cursorChangeHandler } = useContext(MouseContext);
 
   React.useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -38,7 +38,8 @@ export default function LanguageMenu() {
     }
   };
 
-  const current = languages.find((l) => l.code === i18n.language);
+  const current =
+    languages.find((l) => l.code === i18n.language) ?? languages[0];
 
   return (
     <sc.Wrapper
@@ -46,33 +47,20 @@ export default function LanguageMenu() {
       onMouseEnter={() => handleMouseOver(true)}
       onMouseLeave={() => handleMouseOver(false)}
     >
-      <sc.FlagButton type="button" aria-label="Select language">
-        {current && (
-          <img
-            src={current.flag}
-            alt={current.name + " flag"}
-            width={48}
-            height={33}
-          />
-        )}
-      </sc.FlagButton>
+      <sc.LangButton type="button" aria-label="Select language">
+        {current.abbr}
+      </sc.LangButton>
       {open && (
         <sc.Dropdown>
           {languages
-            .filter((lang) => lang.code !== i18n.language)
+            .filter((lang) => lang.code !== current.code)
             .map((lang) => (
-              <sc.FlagOption
+              <sc.LangOption
                 key={lang.code}
                 onClick={() => handleSelect(lang.code)}
-                selected={lang.code === i18n.language}
               >
-                <img
-                  src={lang.flag}
-                  alt={lang.name + " flag"}
-                  width={48}
-                  height={33}
-                />
-              </sc.FlagOption>
+                {lang.abbr}
+              </sc.LangOption>
             ))}
         </sc.Dropdown>
       )}

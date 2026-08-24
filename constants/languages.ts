@@ -1,23 +1,22 @@
-
 export const languages = [
   {
     code: "en",
     name: "English",
-    flag: "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg",
+    abbr: "EN",
   },
   {
     code: "pt",
     name: "Português",
-    flag: "http://purecatamphetamine.github.io/country-flag-icons/3x2/BR.svg",
+    abbr: "PT",
   },
   {
     code: "fr",
     name: "Français",
-    flag: "http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg",
+    abbr: "FR",
   },
   {
     code: "es",
     name: "Español",
-    flag: "http://purecatamphetamine.github.io/country-flag-icons/3x2/ES.svg",
+    abbr: "ES",
   },
 ];
