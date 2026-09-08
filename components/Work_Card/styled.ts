@@ -12,13 +12,9 @@ export const MainWrapper = styled.div`
     min-height: 300px;
     display: flex;
     justify-content: center;
-    @media (max-width: 850px) {
+    @media (max-width: 1024px) {
         display: none;
     }
-    @media (min-width: 851px) and (max-width: 1024px) {
-        left: 15%;
-        min-height: 225px;
-    };
 `
 
 export const BgFrame = styled.span<FrameContainer>`
@@ -29,10 +25,6 @@ export const BgFrame = styled.span<FrameContainer>`
     opacity: var(--bg-detail-opacity);
     transform:  ${p => p.proj ? 'rotate(-10deg)' : 'rotate(0)'};
     transition: transform 0.2s;
-    @media (min-width: 851px) and (max-width: 1024px) {
-        width: 300px;
-        height: 225px;
-    };
 `
 
 export const ActiveFrame = styled.div<FrameContainer>`
@@ -52,7 +44,7 @@ export const ActiveFrame = styled.div<FrameContainer>`
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         box-shadow: -5px 5px 15px black;
         opacity: 0;
         pointer-events: none;
@@ -60,8 +52,4 @@ export const ActiveFrame = styled.div<FrameContainer>`
             opacity: 1;
         }
     }
-    @media (min-width: 851px) and (max-width: 1024px) {
-        width: 300px;
-        height: 225px;
-    };
 `

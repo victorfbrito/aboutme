@@ -22,8 +22,8 @@ export const Title = styled.h1`
     flex-direction: column;
     align-self: flex-end;
     & > span {
-        height: calc(var(--title-font-size) - 18px);
-        margin-top: -18px;
+        height: 0.82em;
+        margin-top: -0.18em;
         overflow: hidden;
         &:nth-of-type(1) {
             align-self: flex-end;
@@ -37,9 +37,6 @@ export const Title = styled.h1`
     }
     @media (max-width: 850px) { 
         width: 90vw;
-        & > span {
-            height: calc(var(--title-font-size) + 8px);
-        }
     }
 `
 

@@ -15,6 +15,7 @@ import {
   ScrollButton,
   HorizontalGuide,
   WorkCard,
+  WorkCursorVideo,
   WorkDetails,
   WorkList,
   Noise_Wrapper,
@@ -104,6 +105,7 @@ export default function Home() {
         ))}
       </Parallax>
       <Cursor />
+      <WorkCursorVideo />
       <Noise_Wrapper />
       <Background_Wrapper />
     </MouseContextProvider>

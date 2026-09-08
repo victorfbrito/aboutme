@@ -10,7 +10,7 @@ export default function WorkAnimation() {
   const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
-    const desktop = window.matchMedia("(min-width: 851px)");
+    const desktop = window.matchMedia("(min-width: 1025px)");
     const sync = () => setShouldLoad(desktop.matches);
     sync();
     desktop.addEventListener("change", sync);

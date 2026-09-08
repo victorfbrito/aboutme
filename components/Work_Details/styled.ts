@@ -15,7 +15,13 @@ export const MainWrapper = styled.div<FrameContainer>`
     transition: opacity 0.2s;
     width: 30%;
     height: 600px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1024px) and (min-width: 851px) {
+        width: 38%;
+        height: auto;
+        max-height: 70%;
+        overflow: auto;
+    }
+    @media (max-width: 850px) {
         display: none;
     }
 `
@@ -32,6 +38,10 @@ export const Text = styled.p`
     font-family: var(--body-font-family);
     font-size: var(--body-font-size);
     font-weight: var(--body-font-weight);
+    @media (max-width: 1024px) {
+        margin: 24px 0;
+        font-size: 1.1rem;
+    }
 `
 
 export const Tech = styled.ul`
